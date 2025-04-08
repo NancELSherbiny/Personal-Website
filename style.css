@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fdfdfd;
+  color: #333;
+}
+
+header {
+  background-color: rgb(246, 218, 182);
+  padding: 10px 200px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: coral;
+  font-weight: 600;
+  font-size: 1.8em;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.navigation a {
+  color: coral;
+  text-decoration: none;
+  padding-left: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navigation a:hover {
+  color: burlywood;
+}
+
+section {
+  padding: 100px 200px;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(135deg, whitesmoke, #f5d4aa, coral);
+  position: relative;
+}
+
+.main::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 127, 80, 0.2);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.main h2, .main h3 {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.main h2 {
+  color: coral;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.main h3 {
+  font-size: 1.8em;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.main-btn {
+  background-color: coral;
+  color: white;
+  padding: 12px 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+  letter-spacing: 3px;
+}
+
+.main-btn:hover {
+  background-color: burlywood;
+  transform: scale(1.05);
+}
+
+.social-icons a {
+  font-size: 1.5em;
+  margin-right: 15px;
+  color: coral;
+}
+
+.title {
+  text-align: center;
+  color: coral;
+  font-size: 2.2em;
+  margin-bottom: 50px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(1,1,1,0.1);
+  padding: 25px;
+  width: 300px;
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 127, 80, 0.4);
+}
+
+.card .icon {
+  font-size: 4em;
+  color: coral;
+  margin-bottom: 10px;
+}
+
+.info h3 {
+  color: coral;
+  font-weight: 600;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.experience, .skills, .certifications, .languages {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.footer {
+  background-color: rgb(234, 193, 149);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .social-icons a {
+  color: coral;
+}
