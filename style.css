@@ -24,6 +24,10 @@ header {
   align-items: center;
 }
 
+.about p{
+  font-size: 18px;
+}
+
 .logo {
   color: coral;
   font-weight: 600;
@@ -185,4 +189,96 @@ section {
 
 .footer .social-icons a {
   color: coral;
+}
+
+@media (max-width: 768px) {
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+header {
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: flex-start;
+}
+
+.logo {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+
+.navigation {
+  margin-top: 10px;
+  margin-left: 0px;
+  display: flex;
+  gap: 10px;
+}
+
+.navigation a {
+  padding-left: 0;
+}
+
+.main {
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: linear-gradient(135deg, whitesmoke, #f5d4aa, coral);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+}
+
+.main::after {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
+
+.main h2 {
+  font-size: 2em;
+}
+
+.main h3 {
+  font-size: 1.2em;
+}
+
+.main-btn {
+  padding: 10px 30px;
+  font-size: 0.9em;
+}
+
+.about,
+.cards {
+  grid-template-columns: 1fr;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+
+
+.content {
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+
+.info p{
+  padding: 10px;
+}
+
+.footer {
+  gap: 10px;
+  text-align: center;
+}
 }
